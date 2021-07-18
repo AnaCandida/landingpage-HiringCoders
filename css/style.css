@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+/*---VARIÁVEIS ---*/
+
+:root {
+  --bkg_logo: #ee790b;
+  --font_logo: #128429;
+  --black: #000;
+  --white: #fff;
+}
+
+html {
+  scroll-behavior: smooth; /*suavidade nas transições*/
+}
+
+.c-menu {
+  background-color: var(--bkg_logo);
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-menu__link {
+  text-shadow: 0 2px 4px var(--black);
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--font_logo);
+}
+
+ul li a:hover {
+  color: var(--font_logo);
+  text-shadow: 0 3px 5px var(--black);
+}
+
+.c-section {
+  height: 120vh;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.c-section__img {
+  height: 120vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.c-section__logo {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  right: 140px;
+  top: 50px;
+}
+
+.c-section__bkg {
+  color: var(--font_logo);
+}
+
+.c-card {
+  background-color: var(--bkg_logo);
+  box-shadow: 0 2px 5px var(--black);
+  border-radius: 20px;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 250px;
+  left: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin-left: 160px;
+  margin-top: 25px;
+}
+
+form input {
+  border-radius: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.c-card__button {
+  background: var(--black);
+  color: var(--bkg_logo);
+  font-weight: 900;
+  transition: 0.3s;
+}
+
+.c-card__button:hover {
+  color: var(--font_logo);
+  box-shadow: 0 2px 5px var(--black);
+}
+
+.c-somos {
+  background-color: var(--font_logo);
+  position: relative;
+  display: flex;
+}
+
+.c-somos__slogan {
+  color: var(--bkg_logo);
+  font-weight: 900;
+  font-size: 2rem;
+  text-shadow: 1px 1px rgba(4, 19, 2, 0.521);
+  position: absolute;
+  top: 45px;
+  left: 400px;
+}
+
+.c-Somos__img {
+  width: 80vh;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 100px 0 80px;
+}
+
+.c-somos_texto {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px rgba(4, 19, 2, 0.521);
+  width: 500px;
+  height: 390px;
+  margin: 0 100px 0 80px;
+}
+
+.c-acre {
+  background-color: var(--bkg_logo);
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.c-acre__text {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  text-shadow: 1px 1px rgba(4, 19, 2, 0.521);
+  width: 800px;
+  height: 390px;
+  margin: 0 80px 0 100px;
+}
+
+.c-acre__img {
+  border-radius: 50%;
+  height: 500px;
+  position: relative;
+  margin: 0 100px 0 80px;
+}
+
+.c-footer {
+  height: 50px;
+  width: 100%;
+  background: var(--bkg_logo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.c-footer__icone {
+  width: 30px;
+  height: 30px;
+  color: var(--black);
+  margin: 0 10px 0 5px;
+  position: relative;
+}
+
+/*---RESPONSIVIDADE----*/
+
+/*---TABLET----*/
+@media (max-width: 767px) {
+  .c-menu {
+    display: none;
+  }
+  .c-section {
+    height: 120vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .c-section__img {
+    height: 120vh;
+    width: 100%;
+  }
+  .c-section__logo {
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    left: 80px;
+    top: 10px;
+  }
+  .c-card {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 100px;
+    top: 370px;
+  }
+
+  h3,
+  p {
+    font-size: 13px;
+  }
+  form {
+    width: 100%;
+    font-size: 13px;
+    position: relative;
+    left: -100px;
+  }
+
+  .c-somos {
+    position: relative;
+    display: block;
+    height: 130vh;
+  }
+
+  .c-somos__slogan {
+    font-weight: 900;
+    font-size: 30px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+  }
+
+  .c-Somos__img {
+    width: 50vh;
+    position: relative;
+    display: block;
+    top: 200px;
+    left: 10px;
+  }
+
+  .c-somos_texto {
+    font-size: 18px;
+    width: 340px;
+    height: 250px;
+    position: relative;
+    top: 220px;
+    left: 5px;
+  }
+
+  .c-acre {
+    position: relative;
+    display: block;
+    height: 160vh;
+  }
+
+  .c-acre__text {
+    font-size: 18px;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 100px;
+    left: 0px;
+  }
+
+  .c-acre__img {
+    border-radius: 50%;
+    height: 330px;
+    position: relative;
+    display: block;
+    top: 80px;
+    left: 5px;
+  }
+
+  .c-footer {
+    display: none;
+  }
+}
+
+/*---CELULAR----*/
+@media (max-width: 480px) {
+  .c-menu {
+    display: none;
+  }
+  .c-section {
+    height: 110vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .c-section__img {
+    height: 110vh;
+    width: auto;
+  }
+  .c-section__logo {
+    height: 230px;
+    width: 230px;
+    position: absolute;
+    left: 65px;
+    top: 20px;
+  }
+  .c-card {
+    height: 300px;
+    width: 230px;
+    position: absolute;
+    left: 65px;
+    top: 260px;
+  }
+  h3,
+  p {
+    font-size: 13px;
+  }
+  form {
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+    left: -140px;
+  }
+  .c-somos {
+    position: relative;
+    display: block;
+    height: 110vh;
+    width: 100%;
+  }
+  .c-somos__slogan {
+    font-weight: 900;
+    font-size: 18px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 300px;
+    margin: 0;
+  }
+  .c-Somos__img {
+    width: 300px;
+    position: relative;
+    display: block;
+    top: 110px;
+    margin: 0 0;
+    left: 50px;
+  }
+  .c-somos_texto {
+    font-size: 14px;
+    width: 200px;
+    height: 390px;
+    position: relative;
+    top: 150px;
+    left: 65px;
+    margin: 0;
+  }
+  .c-acre {
+    position: relative;
+    display: block;
+    height: 120vh;
+    width: 100%;
+  }
+  .c-acre__text {
+    font-size: 14px;
+    width: 210px;
+    height: 410px;
+    position: relative;
+    top: 70px;
+    left: 65px;
+    margin: 0;
+  }
+  .c-acre__img {
+    border-radius: 50%;
+    height: 240px;
+    position: relative;
+    display: block;
+    top: 40px;
+    left: 50px;
+    margin: 0;
+  }
+  .c-footer {
+    display: none;
+  }
+}

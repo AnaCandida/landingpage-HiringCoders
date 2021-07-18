@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="Assets/logo.png" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>D-tox Kombucha - Black Friday</title>
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation" class="c-menu">
+        <ul role="menu">
+          <li>
+            <a class="c-menu__link" href="#somos" role="menuitem">
+              Quem Somos</a
+            >
+          </li>
+          <li>
+            <a class="c-menu__link" href="#acreditamos" role="menuitem">
+              No que acreditamos</a
+            >
+          </li>
+          <li>
+            <a class="c-menu__link" href="#contato" role="menuitem"> Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <section class="c-section" role="banner">
+        <img
+          role="img"
+          src="Assets/bkg2.jpg"
+          alt="Folhas verdes com raio de sol"
+          title="Logotipo D-Tox"
+          class="c-section__img"
+        />
+        <img
+          role="img"
+          src="Assets/logo.png"
+          alt="Logotipo D-Tox - circulo laranja com D-Tox Kombucha escrito no centro"
+          title="Logotipo D-Tox"
+          class="c-section__logo"
+        />
+      </section>
+      <div class="c-card" role="text">
+        <div id="content">
+          <h3>Preencha com seus dados</h3>
+          <p>e receba nosso cupom de 50% de desconto!</p>
+
+          <form role="form" id="form" method="POST">
+            <label for="Nome">Nome completo:</label>
+            <input type="text" id="name" name="Nome" />
+
+            <label for="Email">Seu melhor email:</label>
+            <input type="tex" id="email" name="Email" />
+
+            <input
+              type="submit"
+              id="submit"
+              value="Enviar"
+              name="Submit"
+              class="c-card__button"
+            />
+          </form>
+        </div>
+      </div>
+
+      <section class="c-section c-somos" role="text">
+        <img
+          class="c-Somos__img"
+          role="img"
+          src="Assets/kombucha.jpg"
+          alt="Jarra redonda de vidro com kombucha, ao lado um copo cheio com rodelas de limao e ramas de canela"
+          title="Kombucha"
+        />
+
+        <h2 class="c-somos__slogan" id="somos">
+          Produção criativa de kombuchas artesanais
+        </h2>
+
+        <div class="c-somos_texto" role="text">
+          A D-TOX Kombucha tem o desejo de te oferecer uma experiência agradável
+          na degustação de kombuchas, proporcionando uma mistura natural e leve
+          entre os chás, sucos naturais e especiarias. Esperamos que cada um que
+          prove a D-TOX sinta já no primeiro gole o carinho, cuidado e energia
+          positiva que tentamos depositar em cada uma delas.
+        </div>
+      </section>
+
+      <section class="c-section c-acre" role="text">
+        <img
+          class="c-acre__img"
+          role="img"
+          src="Assets/benefits.jpg"
+          alt="desenho de uma garrafa de kombucha com setas indicando os benficios da bebida"
+          title="Bnefícios da Kombucha"
+        />
+
+        <div class="c-acre__text" role="text" id="acreditamos">
+          Fazer kombucha é muito mais sobre a forma como nos relacionamos com o
+          outro do que podemos imaginar. Fazer kombucha exige paciência,
+          entender o tempo do outro e dos processos de cada um. Fazer kombucha
+          exige cuidado, carinho e dedicação, tanto com a própria kombucha
+          durante sua evolução, quanto com o outro que vai receber ela como
+          produto. Quando entendemos e aceitamos esses processos passamos a
+          perceber a vida de outra forma. Cuide de você, entenda os seus
+          processos, cresça e evolua com eles... Sempre 🧡
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo" class="c-footer">
+      <a
+        href="https://www.instagram.com/dtox.kombucha/"
+        target="_blank"
+        rel="noreferrer noopener"
+        role="link"
+        id="contato"
+      >
+        <i class="c-footer__icone" data-feather="instagram"></i>
+      </a>
+      <p>
+        Todos os direitos reservados | Feito com amor por Ana Quadros | 2021
+      </p>
+    </footer>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+  <script src="js/script.js"></script>
+</html>
